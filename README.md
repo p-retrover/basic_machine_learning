@@ -1,6 +1,6 @@
 # ML: From-Scratch Implementations & Deep Learning
 
-A collection of machine learning algorithms built from first principles using NumPy, alongside deep learning implementations and fine-tuning experiments. This repository is designed to be a modular foundation for learning and future model development.
+A collection of machine learning algorithms built from first principles using NumPy, alongside deep learning implementations and fine-tuning experiments. This repository is designed to be a modular foundation for my **learning** and future model development.
 
 ---
 
@@ -66,5 +66,18 @@ To keep the repository clean and lightweight, raw data files are excluded via `.
 * [ ] Addition of Support Vector Machines (SVM) from scratch.
 * [ ] Implementation of Neural Network backpropagation using only NumPy.
 * [ ] Expansion into Natural Language Processing (NLP) with Transformer fine-tuning.
+
+---
+
+### **AI Disclosure**
+
+This project was developed with the assistance of **Gemini**, and other LLMs.
+
+**How AI was utilized:**
+
+* **Architectural Guidance:** Collaborating on the modular structure of the repository to ensure it remains scalable for future algorithm additions.
+* **Debugging & Stability:** AI was instrumental in identifying and resolving numerical instability issues (e.g., handling `NaN` values during Gradient Descent and implementing a numerically stable Sigmoid function).
+* **Feature Enhancement:** Assistance in implementing advanced visualization techniques, such as using **Principal Component Analysis (PCA)** to represent high-dimensional decision boundaries in 2D space.
+* **Documentation:** Streamlining README and report formatting to ensure technical clarity for external reviewers.
 
 ---
