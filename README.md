@@ -11,19 +11,35 @@ A collection of machine learning algorithms built from first principles using Nu
 This project uses **Poetry** for consistent dependency management. To set up your local environment:
 
 1. **Install Dependencies**:
-Run this from the root folder to install all necessary packages (NumPy, Pandas, Matplotlib, Scikit-Learn, PyTorch):
 
 ```bash
 poetry install
 
 ```
 
-1. **Launch Workspace**:
+2. **Register the Kernel**:
+Run this command to link the virtual environment to your Jupyter interface:
+
+```bash
+poetry run python -m ipykernel install --user --name basic-ml-env --display-name "Python (Basic ML)"
+
+```
+
+3. **Launch Jupyter**:
 
 ```bash
 poetry run jupyter lab
 
 ```
+
+4. **Select Kernel**:
+Once in Jupyter Lab, open any `.ipynb` file and select **"Python (Basic ML)"** from the kernel dropdown menu (top right).
+
+> **Note:** To remove this kernel later, run:
+>
+> ```bash
+>poetry run jupyter kernelspec uninstall basic-ml-env
+>```
 
 ### **Running Online**
 
