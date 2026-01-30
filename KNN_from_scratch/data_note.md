@@ -1,5 +1,11 @@
 # Fashion-MNIST Dataset
 
+**Download**
+[https://www.kaggle.com/datasets/zalando-research/fashionmnist/data?select=t10k-images-idx3-ubyte]
+
+**Note**
+Download the zip file,and keep all the data files (*.csv and *ubyte) in a folder called data inside this folder.
+
 ## About Dataset
 
 ### Context

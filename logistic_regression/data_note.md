@@ -1,5 +1,11 @@
 # Breast Cancer Wisconsin (Diagnostic) Dataset
 
+**Download**
+[https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data]
+
+**Note**
+Download the zip file, and rename the csv file to data.csv and keep it in a folder called data inside this folder.
+
 ## Overview
 
 The **Breast Cancer Wisconsin (Diagnostic) Dataset** contains features computed from digitized images of **fine needle aspirates (FNA)** of breast masses. The features describe characteristics of the **cell nuclei** present in each image.
