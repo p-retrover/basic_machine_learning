@@ -38,8 +38,23 @@ Once in Jupyter Lab, open any `.ipynb` file and select **"Python (Basic ML)"** f
 > **Note:** To remove this kernel later, run:
 >
 > ```bash
->poetry run jupyter kernelspec uninstall basic-ml-env
->```
+> poetry run jupyter kernelspec uninstall basic-ml-env
+> ```
+>
+> Also if you want to have virtual environments inside each of your project folder, you can set
+>
+> ```bash
+> poetry config virtualenvs.in-project true
+> ```
+>
+>If the project already has a Poetry env elsewhere:
+>
+>```bash
+> poetry env remove --all
+> poetry install
+> ```
+>
+> This creates the env inside `.venv/`
 
 ### **Running Online**
 
