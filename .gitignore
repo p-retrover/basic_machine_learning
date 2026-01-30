@@ -1,0 +1,94 @@
+# Python bytecode & caches
+
+pycache/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+.env
+.venv
+venv/
+env/
+ENV/
+
+# Jupyter Notebook artifacts
+
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# JupyterLab / IPython
+
+.profile_default/
+ipython_config.py
+
+# Python packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ML frameworks & logs
+
+logs/
+runs/
+lightning_logs/
+wandb/
+mlruns/
+
+# Model artifacts & checkpoints
+
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.joblib
+*.pkl
+*.pickle
+*.onnx
+
+# Data files (keep raw data out of git)
+
+data/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.hdf
+*.npz
+*.npy
+
+# Experiment outputs
+
+outputs/
+results/
+figures/
+plots/
+
+# IDE / Editor files
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment & secrets
+
+.env.local
+.env.*.local
+*.key
+*.pem
