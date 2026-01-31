@@ -56,6 +56,44 @@ Once in Jupyter Lab, open any `.ipynb` file and select **"Python (Basic ML)"** f
 >
 > This creates the env inside `.venv/`
 
+#### **PyTorch Configuration: CPU vs. GPU**
+
+By default, this repository is configured to use the **CPU-only version of PyTorch**.
+
+**Why CPU?**
+
+* **Compatibility**: Ensures the project runs out-of-the-box on most systems..
+* **Disk Space**: The CPU binary is significantly smaller (~200MB) compared to the CUDA-enabled version (~5GB+), preventing unnecessary bloat in your `.cache` or `.venv`.
+* **Efficiency**: Since we use **Transfer Learning** (Freezing the backbone), training the final layer is fast enough on modern CPUs.
+
+**How to switch to CUDA (If you have an NVIDIA GPU):**
+If you want to leverage hardware acceleration, you need to modify the `pyproject.toml` file:
+
+1. **Change the Source**: Remove the `pytorch-cpu` source and the specific source constraints for `torch` and `torchvision`.
+2. **Update Dependencies**:
+
+```toml
+# remove this:
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+# and this:
+[tool.poetry.dependencies]
+torch = { version = "^2.10.0", source = "pytorch-cpu" }
+torchvision = { version = "^0.25.0", source = "pytorch-cpu" }
+
+```
+
+3. **Re-install**:
+
+```bash
+poetry lock --no-update
+poetry install
+
+```
+
 ### **Running Online**
 
 For quick testing without local setup, you can upload the `.ipynb` files directly to **Google Colab**.
