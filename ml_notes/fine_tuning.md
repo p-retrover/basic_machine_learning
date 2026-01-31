@@ -2,7 +2,7 @@
 
 **Transfer Learning** is a research problem in machine learning that focuses on storing knowledge gained while solving one problem and applying it to a different but related problem.
 
-In our case, we take a model (ResNet-18) that was trained on the massive **ImageNet** dataset (1.2 million images) and "transfer" its ability to see patterns to our smaller **CIFAR-10** dataset. It’s the difference between teaching a toddler to recognize a car from scratch vs. telling an expert driver to learn to drive a truck.
+In our case, we take a model (ResNet-18) that was trained on the massive **ImageNet** dataset (1.2 million images) and "transfer" its ability to see patterns to our smaller **CIFAR-10** dataset.
 
 ---
 

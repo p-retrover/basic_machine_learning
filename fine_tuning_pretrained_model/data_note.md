@@ -5,7 +5,7 @@ Python can download this dataset automatically using: ```datasets.CIFAR10(root='
 
 ## Overview
 
-CIFAR-10 (Canadian Institute For Advanced Research) consists of 60,000 tiny color images. It is small enough to train quickly on your Fedora system but complex enough to show the power of Transfer Learning.
+CIFAR-10 (Canadian Institute For Advanced Research) consists of 60,000 tiny color images. It is small enough to train quickly but complex enough to show the power of Transfer Learning.
 
 * **Image Size**:  pixels (very small, which makes it fast).
 * **Channels**: 3 (RGB).
@@ -32,8 +32,8 @@ CIFAR-10 (Canadian Institute For Advanced Research) consists of 60,000 tiny colo
 
 ## **Why CIFAR-10 for Transfer Learning?**
 
-1. **The Resolution Gap**: ResNet-18 was originally trained on **ImageNet**, which uses  images. Training it on  CIFAR images requires you to implement **Upsampling (Resizing)** in your preprocessing—this is a key skill in modern Computer Vision.
+1. **The Resolution Gap**: ResNet-18 was originally trained on **ImageNet**, which uses  images. Training it on  CIFAR images requires us to implement **Upsampling (Resizing)** in our preprocessing—this is a key skill in modern Computer Vision.
 2. **Semantic Ambiguity**: Unlike Fashion-MNIST, where a "Boot" looks very different from a "T-shirt," CIFAR-10 has tricky pairs (e.g., **Cat vs. Dog** or **Automobile vs. Truck**).
-3. **Benchmark Standard**: Using CIFAR-10 makes makes it easy for other ML developers, to compare your ResNet-18 performance against established benchmarks.
+3. **Benchmark Standard**: Using CIFAR-10 makes makes it easy for other ML developers, to compare our ResNet-18 performance against established benchmarks.
 
 ---
