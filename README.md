@@ -8,6 +8,30 @@ A collection of machine learning algorithms built from first principles using Nu
 
 ### **Environment Setup**
 
+Please make sure that you have Python3.14 installed on your system. If you're a linux/mac user, you can install from your package manager. If you're a windows user, you can either download it from microsoft store, or from a very nice package manager called scoop.
+
+> To install scoop, open your terminal and run
+>
+>```bash
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+>```
+>
+> Then to install python3.14
+>
+>```bash
+> scoop bucket add versions
+> scoop install python314
+>```
+>
+> Then explicitly tell poetry to use the correct python version.
+>
+>```bash
+> poetry env use python314
+>```
+>
+> Then proceed below.
+
 This project uses **Poetry** for consistent dependency management. To set up your local environment:
 
 1. **Install Dependencies**:
