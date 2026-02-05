@@ -157,7 +157,7 @@ To keep the repository clean and lightweight, raw data files are excluded via `.
 ## Future Roadmap
 
 * [ ] Addition of Support Vector Machines (SVM) from scratch.
-* [ ] Implementation of Neural Network backpropagation using only NumPy.
+* [x] Implementation of Neural Network backpropagation using only NumPy.
 * [ ] Expansion into Natural Language Processing (NLP) with Transformer fine-tuning.
 
 ---
