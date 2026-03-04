@@ -40,11 +40,13 @@ CIFAR-10 (Canadian Institute For Advanced Research) consists of 60,000 tiny colo
 
 ## **How to Run the App**
 
+> Make sure you've ran the jupyter notebook and created the `resnet18_cifar10.pth` file in the respective project root.
+>
+
 To run the app, and upload your images to test the model, you can run
 
 ```bash
-poetry run python finetuning_pretrained_model/app.py
+poetry run python finetuning_pretrained_model/app.py # From the root folder
 ```
 
-from the root folder.
 Then go to 127.0.0.1:7860 (you can see in the command line to get the link)

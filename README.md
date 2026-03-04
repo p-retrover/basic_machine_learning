@@ -149,7 +149,7 @@ To keep the repository clean and lightweight, raw data files are excluded via `.
 
 ## Future Roadmap
 
-### **Classical Machine Learning (The Math Foundations)**
+### **Classical Machine Learning**
 
 * [ ] **Principal Component Analysis (PCA)** from scratch using Eigen-decomposition and Singular Value Decomposition (SVD).
 * [ ] **Support Vector Machines (SVM)** implementation using the Dual Lagrangian formulation.
