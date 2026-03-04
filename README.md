@@ -6,6 +6,12 @@ A collection of machine learning algorithms built from first principles using Nu
 
 ## Getting Started
 
+Download the repo
+
+```bash
+git clone https://github.com/p-retrover/basic_machine_learning && cd basic_machine_learning
+```
+
 ### **Environment Setup**
 
 Please make sure that you have Python3.14 installed on your system. If you're a linux/mac user, you can install from your package manager. If you're a windows user, you can either download it from microsoft store, or from a very nice package manager called scoop.
