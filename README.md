@@ -136,33 +136,49 @@ To keep the repository clean and lightweight, raw data files are excluded via `.
 
 ---
 
-## Featured Modules
+## Projects
 
-### **1. K-Nearest Neighbors (KNN)**
-
-* **Implementation**: Built from scratch to support Euclidean and Manhattan distance metrics.
-* **Visualization**: Incorporates **Principal Component Analysis (PCA)** to visualize 784-dimensional Fashion-MNIST data in a 2D decision boundary map.
-
-### **2. Logistic Regression**
-
-* **Implementation**: Features a numerically stable Sigmoid function to handle high-variance data and Z-score normalization for feature scaling.
-* **Analysis**: Focuses on the "First Principles" of gradient descent and weight optimization.
-
-### **3. Deep Learning & Fine-Tuning**
-
-* **Focus**: Leveraging state-of-the-art architectures (like ResNet) through transfer learning to solve complex high-level classification tasks.
+| Project Name | Description | Link |
+| :--- | :--- | :--- |
+| **Fine-Tuning ResNet-18** | Transfer learning on CIFAR-10 with PyTorch. | [View Project](./fine_tuning_pretrained_model/) |
+| **NN from Scratch** | 3-layer MLP implemented using pure NumPy. | [View Project](./nn_from_scratch/) |
+| **KNN from Scratch** | Distance-based classification on Fashion-MNIST. | [View Project](./KNN_from_scratch/) |
+| **Logistic Regression** | Binary classification using Gradient Descent. | [View Project](./logistic_regression/) |
 
 ---
 
 ## Future Roadmap
 
-* [ ] Addition of Support Vector Machines (SVM) from scratch.
+### **Classical Machine Learning (The Math Foundations)**
+
+* [ ] **Principal Component Analysis (PCA)** from scratch using Eigen-decomposition and Singular Value Decomposition (SVD).
+* [ ] **Support Vector Machines (SVM)** implementation using the Dual Lagrangian formulation.
+* [ ] **Gaussian Mixture Models (GMM)** and the Expectation-Maximization (EM) algorithm for soft clustering.
+* [ ] **Decision Trees & Random Forests** using Gini Impurity and Information Gain metrics.
+
+### **Deep Learning & Computer Vision**
+
 * [x] Implementation of Neural Network backpropagation using only NumPy.
-* [ ] Expansion into Natural Language Processing (NLP) with Transformer fine-tuning.
+* [ ] Development of **CNN layers (Convolution, Pooling, Flatten)** in pure NumPy to understand spatial feature extraction.
+* [ ] **Generative Adversarial Networks (GANs)**: Training a simple DCGAN to generate handwritten digits or CIFAR-like images.
+* [ ] Implementation of **Optimization Algorithms** (Adam, RMSProp, and Adagrad) from scratch and comparing their convergence.
+
+### **Natural Language Processing (NLP)**
+
+* [ ] **Word Embeddings**: Implementing a Word2Vec (Skip-gram) model to visualize semantic vector spaces.
+* [ ] **Attention Mechanism**: Building the Scaled Dot-Product Attention block from scratch (the "math" heart of Transformers).
+* [ ] **Transformer Fine-tuning**: Leveraging Hugging Face `transformers` to fine-tune a BERT or DistilBERT model for Sentiment Analysis.
+* [ ] **Parameter-Efficient Fine-Tuning (PEFT)**: Experimenting with LoRA or QLoRA for local LLM adaptation.
+
+### **MLOps & Deployment**
+
+* [ ] **Containerization**: Writing `Dockerfiles` for each `app.py` to ensure they run seamlessly on any Linux distribution.
+* [ ] **CI/CD for ML**: Using GitHub Actions to automate unit tests for NumPy matrix dimensions.
+* [ ] **Hugging Face Integration**: Creating a unified "Space" to host a gallery of all project interfaces.
 
 ---
 
-### **AI Disclosure**
+## **AI Disclosure**
 
 This project was developed with the assistance of **Gemini**, and other LLMs.
 
