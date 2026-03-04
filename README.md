@@ -124,13 +124,13 @@ For quick testing without local setup, you can upload the `.ipynb` files directl
 
 ---
 
-## Dataset Management
+## Dataset and Implementation Management
 
 To keep the repository clean and lightweight, raw data files are excluded via `.gitignore`.
 
 **To test the implementations:**
 
-1. Navigate to the `data_note.md` file within the specific project directory, you'll get the instructions there.
+1. Navigate to the `README.md` file within the specific project directory, you'll get the instructions there.
 2. Download the datasets from the provided links.
 3. Create a `data/` folder in that project's directory to keep the downloaded datasets.
 

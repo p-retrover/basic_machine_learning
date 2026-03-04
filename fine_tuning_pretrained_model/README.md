@@ -1,9 +1,11 @@
-# **Dataset Profile: CIFAR-10**
+# Fine tuning
+
+## **Dataset Profile: CIFAR-10**
 
 **Note**:
 Python can download this dataset automatically using: ```datasets.CIFAR10(root='./data', download=True)```.
 
-## Overview
+### Overview
 
 CIFAR-10 (Canadian Institute For Advanced Research) consists of 60,000 tiny color images. It is small enough to train quickly but complex enough to show the power of Transfer Learning.
 
@@ -28,12 +30,21 @@ CIFAR-10 (Canadian Institute For Advanced Research) consists of 60,000 tiny colo
 | 8 | **Ship** | Cargo ships, boats, etc. |
 | 9 | **Truck** | Large trucks (no pickup trucks). |
 
----
-
-## **Why CIFAR-10 for Transfer Learning?**
+### **Why CIFAR-10 for Transfer Learning?**
 
 1. **The Resolution Gap**: ResNet-18 was originally trained on **ImageNet**, which uses  images. Training it on  CIFAR images requires us to implement **Upsampling (Resizing)** in our preprocessing—this is a key skill in modern Computer Vision.
 2. **Semantic Ambiguity**: Unlike Fashion-MNIST, where a "Boot" looks very different from a "T-shirt," CIFAR-10 has tricky pairs (e.g., **Cat vs. Dog** or **Automobile vs. Truck**).
 3. **Benchmark Standard**: Using CIFAR-10 makes makes it easy for other ML developers, to compare our ResNet-18 performance against established benchmarks.
 
 ---
+
+## **How to Run the App**
+
+To run the app, and upload your images to test the model, you can run
+
+```bash
+poetry run python finetuning_pretrained_model/app.py
+```
+
+from the root folder.
+Then go to 127.0.0.1:7860 (you can see in the command line to get the link)
