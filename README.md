@@ -1,6 +1,7 @@
 # ML: From-Scratch Implementations & Deep Learning
 
 A collection of machine learning algorithms built from first principles using NumPy, alongside deep learning implementations and fine-tuning experiments. This repository is designed to be a modular foundation for my **learning** and future model development.
+[Books and Resources](./ml_notes/resources.md)
 
 ---
 
