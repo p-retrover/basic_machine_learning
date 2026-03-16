@@ -24,6 +24,7 @@ We cannot use Mean Squared Error for Logistic Regression because the resulting c
 
 $$J(\theta) =-\frac{1}{m}\sum_{i=1}^{m}\left[y^(i) log ( h_\theta(x^{(i)}))+(1 - y^{(i)}) \log ( 1 - _\theta(x^{(i)}) )\right]
 $$
+
 ---
 
 ## **3.2 k-Nearest Neighbors (k-NN)**

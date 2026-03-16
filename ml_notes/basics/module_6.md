@@ -61,7 +61,7 @@ Real-world datasets often have missing entries ($NaN$ or $Null$). We have two pr
 To avoid the **Curse of Dimensionality** and reduce overfitting, we select a subset of the most relevant features.
 
 * **Filter Methods:** Use statistical measures to rank features independent of the ML model (e.g., Pearson Correlation, Chi-Square test).
-* **Wrapper Methods:** Treat feature selection as a search problem. They train the model on different subsets and pick the best one (e.g., Recursive Feature Elimination).
+* **Wrapper Methods:** Treat feature selection as a search problem. Then train the model on different subsets and pick the best one (e.g., Recursive Feature Elimination).
 * **Embedded Methods:** The selection happens *during* the model training (e.g., **Lasso Regression**, where $L_1$ penalty forces coefficients of unimportant features to zero).
 
 ---
